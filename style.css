@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Rubik:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 
+:root {
+   --branco: #ffffff;
+   --cinza: #f2f2f2;
+   --verde:#9CD439;
+   --verdeescuro:#337029;
+   --preto:#000;
+   --azul:#010F2E;
+
+}
+
+
 body{
-  background-color:#f2f2f2;
+  background-color:var(--cinza);
+}
+
+h2{
+margin-bottom: 20px;
+
 }
 
 .start-header {
@@ -26,7 +42,7 @@ body{
 	transition : all 0.3s ease-out;
 }
 .navigation-wrap{
-	color: white !important;
+	color: var(--preto);
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -82,6 +98,10 @@ body{
 	color: #212121 !important;
 	font-weight: 500;
     transition: all 200ms linear;
+}
+.nav-item .nav-link{
+color:#212121 ;
+
 }
 .nav-item:hover .nav-link{
 	color: #337029 !important;
@@ -250,7 +270,7 @@ body{
 }
 .footer-container-global h5, li, a:link{
 	text-align: left !important;
-  color: white !important;
+  color: white ;
 }
 .footer-links {
   font-size: 12px;
@@ -695,16 +715,19 @@ color: var(--color);
 text-decoration: underline;
 }
 
+/*código do bottão*/
+
 
 .botao{
   padding: 10px 12px;
-  color: #fff;
+  color: rgb(148, 134, 134);
   letter-spacing:2px;
   text-align: center;
   position: relative;
   text-decoration: none;
   display:inline-block;
   margin-right:7px;
+  margin-bottom: 50px;
   
 }
 .botao::before {
@@ -737,10 +760,9 @@ text-decoration: underline;
 }
 .botao{
     font-size:1em;
-    color:#ffffff;
+    color:#bfff00;
     text-align:center;
-   
-    border:1px solid #ffffff;
+    border:1px solid #000000;
     border-radius:3px;
     overflow: hidden!important;
     -webkit-transition: all .4s ease-in-out;
@@ -748,11 +770,11 @@ text-decoration: underline;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     background: transparent!important;
-    z-index:10;
+  
     
 }
 .botao:hover{
-    border: 1px solid #262626;
+    border: 1px solid #0000;
     color: #1fe511!important;
 }
 .botao::before {
@@ -760,7 +782,8 @@ text-decoration: underline;
     width: 0%;
     height: 100%;
     display: block;
-    background: #262626;
+    background: var(--verde); /*o hover grande*/
+    color: var(--branco);
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg); 
@@ -781,7 +804,7 @@ text-decoration: underline;
     width: 0%;
     height: 100%;
     display: block;
-    background: #17e304;
+    background: #494545;/*efeito de fundo*/
     position: absolute;
     -ms-transform: skewX(-15deg);
     -webkit-transform: skewX(-15deg); 
@@ -802,6 +825,131 @@ text-decoration: underline;
     width: 120%;
 }
 .botao:hover::after, .botao:hover::after{
+    opacity:1;
+    width: 150%;
+}
+
+
+.botao a{
+  color:rgb(20, 1, 1);
+  text-decoration: none;
+}
+
+
+.botao:hover a{
+  color:var(--branco);
+}
+
+
+/* botoes rodapé */
+
+footer .botao{
+
+  padding: 10px 12px;
+  color: #fff;
+  letter-spacing:2px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  margin-right:7px;
+  
+}
+footer .botao::before {
+  
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #b8b8b8;
+  display: block;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+footer .botao:hover::before {
+  
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+footer .botao{
+    font-size:1em;
+    color:#ffffff;
+    text-align:center;
+   
+    border:1px solid #ffffff;
+    border: radius 50%;;
+    overflow: hidden!important;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    
+}
+footer .botao:hover{
+    border: 1px solid #262626;
+    color: #1fe511!important;
+}
+footer .botao::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #262626;
+    position: absolute;
+    -ms-transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg); 
+    transform: skewX(-15deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+    box-shadow:2px 0px 14px rgba(0,0,0,.6);
+} 
+footer .botao::after {
+ 
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #17e304;
+    position: absolute;
+    -ms-transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg); 
+    transform: skewX(-15deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+footer .botao:hover::before, .botao:hover::before{
+   
+    opacity:1;
+    width: 120%;
+}
+footer .botao:hover::after, .botao:hover::after{
     opacity:1;
     width: 150%;
 }
@@ -877,21 +1025,7 @@ text-decoration: underline;
     }
     
     
-}
-
-/*botao saiba mais*/
-.maoe{
-  color:rgb(20, 1, 1);
-}
-.maoe:link{
-  text-decoration: rgb(255, 0, 0)!important;
-  color: #000000!important;/*muda a cor da letra*/
-}
-
-.maoe:hover{
-  color: rgb(20, 1, 1)!important;
-}
-
+  }
 
 
 
