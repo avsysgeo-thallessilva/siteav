@@ -1,0 +1,55 @@
+
+.espacamento{
+    margin-top: 10%;
+    text-align: center;
+}
+.container-fluid-2{
+    display: block;
+    max-width: 100%;
+	padding: 50px 50px 50px 50px;
+
+    background: linear-gradient(-45deg, #24dd13, #21e221, #1ba817, #1d8b13);
+    background-size: 400% 400%;
+    animation: gradient 6.5s ease infinite;
+
+}
+/* DEGRADE DE COR */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* CORRIGIR OS TEXTOS */
+#fonte-texto{
+  font-size: 45px;
+}
+h6{
+  margin-top: 15px;
+}
+
+
+.container-do-texto{
+    margin-left:25%;
+    display: block;
+    max-width: 50%;
+    color: black;
+	padding: 50px 0 0 0;
+}
+
+.arrumar-texto{
+    text-align: justify;
+    font-size: large;
+}
+
+
+.container-fluid{
+    max-width: 70%;
+    padding: 45px 50px 10px 50px;
+   
+}

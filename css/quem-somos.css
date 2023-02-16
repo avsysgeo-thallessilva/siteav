@@ -1,0 +1,152 @@
+
+/* CONTAINER DO QUEM SOMOS */
+.espacamento{
+    margin-top: 10%;
+    text-align: center;
+}
+.container-fluid{
+    display: block;
+    max-width: 100%;
+	padding: 50px 50px 50px 50px;
+
+    background: linear-gradient(-45deg, #24dd13, #21e221, #1ba817, #1d8b13);
+    background-size: 400% 400%;
+    animation: gradient 6.5s ease infinite;
+
+}
+/* DEGRADE DE COR */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* CORRIGIR OS TEXTOS */
+
+
+
+
+
+.container-do-texto{
+    margin-left:25%;
+    display: block;
+    max-width: 50%;
+    color: black;
+	padding: 50px 0 0 0;
+}
+
+
+/* Cards */
+:root {
+  --cor:#9CD439;
+; 
+}
+
+
+
+.flex {
+  display: flex;
+}
+
+       /* .principal */
+.principal {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+}
+
+#servicos-container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+  
+}
+
+ .fd  {
+  width: 18.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 3rem 1rem 1rem;
+  background-color: var(--cor);
+  position: relative;
+  overflow: hidden;
+  border-radius: 7%;
+  box-shadow: 7px 8px #142f2f;
+  
+}
+
+/*Ver com o Hugo*/
+.descendo{
+  padding-bottom: 36%;
+}
+
+/*diminuir aqui quando aumentar o subindo-2*/
+.descendo-2{
+  padding-bottom: 17%;
+}
+
+.subindo{
+  padding: 5%;
+}
+/* aumentar aqui dá espaço entre missão e o texto abaixo */
+.subindo-2{
+  padding:3%;
+}
+
+
+
+
+
+.principal #servicos-container .fd:hover .bgColor {
+  bottom: 0;
+}
+
+.fd:hover{
+  transform: scale(1.1);
+}
+.titulo-quem-somos {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.vambora{
+  padding-bottom: 3.5rem!important;
+}
+
+
+
+#palavra , #servicos-co-descricao{
+  font-weight: 600;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+
+
+
+ul{
+list-style:none;
+text-align: center;
+}
+
+
+.roberto{
+  list-style: url(/medal-award-winner-svgrepo-com.svg)!important;
+}
+
+
+
+
+
