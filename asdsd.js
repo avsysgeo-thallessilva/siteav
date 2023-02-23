@@ -1,22 +1,3 @@
-function changeSize(element) {
-    parent = element.parentNode;
-    parent.classList.toggle("card-expanded-salad");
-    var av = document.getElementById("button-1");
-    if (av.innerHTML === "↑") {
-      av.innerHTML = " ↓";
-    } else {
-      av.innerHTML = "↑";
-    }
-    var ax = document.getElementById("background");
-    ax.classList.toggle("no-pad");
-  }
-  
-  
-  function showImg() {
-    var x = document.getElementById("salad-img");
-    x.classList.toggle("show-picture");
-  }
-
 
   (function(){
   
