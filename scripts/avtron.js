@@ -2,12 +2,8 @@ let tempo_msg_posso_ajudar = 10000;
 
 const msg_boas_vindas = () => {
 	let index = 0;
-	const textoum   = "Olá, tudo bem?Eu sou o AVTRON assistente virtual da AVSYSTEMgeo".split('');
-	// const textoum[x] é o local de cada letra
-	//a quebra de linha pelo array,pode ser responsavel pelo bug das palavras embaralhadas
-	textoum[14] = '<br>E'
-	textoum[29] = '<br>a'
-	textoum[47] = '<br>d'
+	const textoum   = "Olá, tudo bem? Eu sou o AVTRON, assistente virtual da AVSystemGEO".split('');
+	
 
 	const escrevendo_inicio = setInterval(() => {
 		if(index < textoum.length) {
