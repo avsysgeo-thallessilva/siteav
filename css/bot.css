@@ -23,13 +23,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.frame-content {
-   
-    transform: translateY(0px);
-    transition: none 0s ease 0s !important;
-    visibility: visible;
-    z-index: 999999999 !important;
-}
+
 #chat-button {
     position: fixed;
     width: 112px;
