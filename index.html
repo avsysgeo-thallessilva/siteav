@@ -15,55 +15,86 @@
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./css/quem-somos.css">
 	<link rel="stylesheet" href="./css/sistemas.css">
+	<link rel="stylesheet" href="./css/bot.css">
+
 </head>
 
 <body>
 
 	<body class="hero-anime">
 		<!--BOT-->
-		<button class="chatbox-open">
-			<div class="robo-container">
-				<div class="robo-chat-container">
-					<div class="talk-bubble tri-right border-bubble btm-right-in">
-						<div class="talktext">
-							<div class="typewriter">
-								<p></p>
-							</div>
+
+		<div class="chat-board chatbot chat new trending"></div>
+
+<div class="frame-content">
+    <div class="widget-position-right sidebar-position-right onlyBubble" id="chatContainer">
+
+        <div class="chat no-clip-path chrome moveFromRight-enter-done">
+            <div class="chat-header project-online" style="color: rgb(255, 255, 255); background: linear-gradient(135deg, rgb(39, 218, 69) 0%, rgb(0, 255, 157) 100%);">
+                <span><img src="./imgs/avtronrostinho.png" alt="" class="avtronrosto"></span>
+                <h2 class="oneline"><span>AVTRON</span></h2>
+                <button class="material-icons exit-chat ripple tidio-1s5t5ku" id="minimize-button" type="button" aria-label="Minimize" style="color: rgb(255, 255, 255);">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" id="ic-minimize">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
+                    </svg>
+                    <span>Minimize</span>
+                </button>
+                <div class="offline-message" style="background-image: linear-gradient(135deg, rgba(130, 214, 127, 0.72) 0%, rgba(20, 233, 151, 0.72) 100%);">
+                    <span class="online"><span>Online</span></span>
+                </div>
+            </div>
+            <div id="conversation-group"  role="log">
+                <div id="messages" aria-live="polite" aria-atomic="false" data-testid="messagesLog">
+                    <div class="message message-operator  ">
+                        <span class="message-content">Olá, como posso ajudar?</span>
+                    </div>
+                    <div class="message message-operator bots-quick-replies">
+                        <div class="button-wrapper">
+                         
+                        </div>
+                    </div>
+                </div><div id="conversation-scroll">
+                    <div style="top: 0px; height: 55.8952px;"></div>
+                </div>
+            </div>
+            <div class="input-group ">
+                <hr>
+                <div class="drag-active-wrapper footer-input-wrapper">
+                    <textarea id="chat-input" rows="1" placeholder="Hit the buttons to respond" aria-label="New message" data-testid="newMessageTextarea"></textarea>
+                  
+                    <button id="SentButton" class="send-icon" title="SentButton" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve">
+                        <path fill="#d7d7d7" d="M22,11.7V12h-0.1c-0.1,1-17.7,9.5-18.8,9.1c-1.1-0.4,2.4-6.7,3-7.5C6.8,12.9,17.1,12,17.1,12H17c0,0,0-0.2,0-0.2c0,0,0,0,0,0c0-0.4-10.2-1-10.8-1.7c-0.6-0.7-4-7.1-3-7.5C4.3,2.1,22,10.5,22,11.7z"></path>
+                        </svg>
+                    </button>
+                   
+                </div>
+            </div>
+        </div>
+		
+</div>
+	<button type="button"
+	id="button-body"
+	data-testid="widgetButtonBody"
+	class="chrome"
+	tabindex="0"
+	aria-label="Open chat widget">
+		<div class="robo-container">
+			<div class="robo-chat-container">
+				<div class="talk-bubble tri-right border-bubble btm-right-in">
+					<div class="talktext">
+						<div class="typewriter">
+							<p></p>
 						</div>
 					</div>
 				</div>
-				<div class="robo-container-img">
-					<img src="./imgs/avtronposeum.png" alt="">
-				</div>
 			</div>
-		</button>
-
-		<button class="chatbox-close">
-			<i class="fa fa-close fa-2x" aria-hidden="true"></i>
-		</button>
-
-		<section class="chatbox-popup">
-			<header class="chatbox-popup__header">
-				<aside style="flex:3">
-					<img class="icon-avtron-chat" src="./imgs/avtronrostinho.png" alt="">
-				</aside>
-				<aside style="flex:14">
-					<h1>AVTRON</h1> Suporte (Online)
-				</aside>
-
-			</header>
-			<main class="chatbox-popup__main">
-				Posso ajudar?<br> Digite a sua dúvida
-			</main>
-			<footer class="chatbox-popup__footer">
-				<aside style="flex:10">
-					<textarea type="text" placeholder="Digite sua dúvida..." autofocus></textarea>
-				</aside>
-				<aside style="flex:1;color:#888;text-align:center;">
-					<i class="fa fa-paper-plane" aria-hidden="true"></i>
-				</aside>
-			</footer>
-		</section>
+			<div class="robo-container-img">
+				<img src="./imgs/avtronposeum.png" alt="">
+			</div>
+		</div>
+	</button>
 		<!--FIM-->
 
 		<!--BARRA DE NAVEGAÇÃO-->

@@ -278,29 +278,6 @@ color:#212121 ;
 }
 /* ROBO */
 
-.robo-container {
-	bottom: 0;
-  position: fixed;
-  margin: 1em;
-  right: 0;
-  z-index: 998;
-	cursor: pointer;
-}
-.robo-container-img {
-	text-align: right;
-}
-.robo-container img {
-	width: 150px;
-}
-.robo-chat-container {
-	text-align: left;
-	margin-right: 50px;
-	animation-name: animateIn;
-  animation-duration: 1350ms;
-  animation-delay: calc(var(--animation-order) * 1000ms);
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in-out;
-}
 
 @keyframes animateIn {
   0% {
