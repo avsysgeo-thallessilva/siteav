@@ -1,0 +1,132 @@
+.container-tecnologias {
+    margin-top: 10%;
+    max-width:100%
+}
+
+
+.container-clientes {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.slider-clientes {
+    color: #414345;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*limita o slide*/
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.slick-slide {
+    display: none;
+    float:left;/*slide não aparece sem o float*/
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+/*slide não aparece */
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+/*cor e formato do background das imagens*/
+.slide {
+    border-radius: 5%;
+    background-color: white;
+    padding: 10px;
+    line-height: 119px;
+}
+
+/*formata os slides dos clientes*/
+.clientes .slide{
+    height: 80px;
+    line-height: 54px;
+}
+
+/*Slides Tecnologia*/
+.slick-arrow-tecnologia{
+    z-index: 1;
+    position: absolute;
+    display:flex;
+}
+
+/*Ver com o Hugo o espaçamento tecnologia */
+.slick-prev-tecnologia{
+    margin-top:3.8%;
+    margin-left: -6.7%;
+}
+.slick-next-tecnologia{
+    margin-top: -10%;
+    margin-left:98.9%;
+}
+
+.slick-arrow-tecnologia{
+    z-index: 1;
+    position: absolute;
+    display:flex;
+}
+/*Fim Slide Tecnologia*/
+
+/*Slides Clientes*/
+
+.slick-arrow-clientes{
+    z-index: 1;
+    position: absolute;
+    display:flex;
+}
+
+/*Ver com o Hugo o espaçamento clientes */
+.slick-prev-clientes{
+    margin-top:0.5%;
+    margin-left: -6.3%;
+}
+.slick-next-clientes{
+    margin-top: -7.3%;
+    margin-left:99.1%;
+}
+/*Fim Slide Clientes*/
+
+/*Ajusta tamanho dos Icons next e prev*/
+.tamanho-svg-next{
+    height: 70px;
+    width: 80px;
+}
+.tamanho-svg-prev{
+    height: 70px;
+    width: 80px;
+}
+
