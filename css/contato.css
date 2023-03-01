@@ -19,7 +19,7 @@
     max-width: 100%;
   padding: 50px 50px 50px 50px;
   
-    background: linear-gradient(-45deg, #24dd13, #21e221, #1ba817, #1d8b13);
+    background: linear-gradient(-45deg, var(--verde), var(--verdeescuro), var(--verdeclaro));
     background-size: 400% 400%;
     animation: gradient 6.5s ease infinite;
   
@@ -27,10 +27,10 @@
   /* DEGRADE DE COR */
   @keyframes gradient {
   0% {
-    background-position: 0% 50%;
-  }
+    background-position: 0% 60%;
+    }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 70%;
   }
   100% {
     background-position: 0% 50%;
@@ -39,9 +39,11 @@
   /* CORRIGIR OS TEXTOS */
   #fonte-texto{
     font-size: 45px;
+    color:#f2f2f2;
   }
   h6{
     margin-top: 15px;
+    color:#f2f2f2;
   }
   .espacamento{
     margin-top: 10%;
