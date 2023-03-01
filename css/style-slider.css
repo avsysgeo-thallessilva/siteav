@@ -67,14 +67,19 @@
 .slide {
     border-radius: 5%;
     background-color: white;
-    padding: 10px;
-    line-height: 119px;
+    padding: 11px;
+    
 }
 
 /*formata os slides dos clientes*/
 .clientes .slide{
     height: 80px;
     line-height: 54px;
+}
+
+
+.tecnologias{
+    line-height: 69px;
 }
 
 /*Slides Tecnologia*/
@@ -86,12 +91,12 @@
 
 /*Ver com o Hugo o espaçamento tecnologia */
 .slick-prev-tecnologia{
-    margin-top:3.8%;
+    margin-top:1%;
     margin-left: -6.7%;
 }
 .slick-next-tecnologia{
-    margin-top: -10%;
-    margin-left:98.9%;
+    margin-top: -8.1%;
+    margin-left:99.5%;
 }
 
 .slick-arrow-tecnologia{
