@@ -630,3 +630,8 @@ element.style {
 .avtronrosto{
     width: 20%;
 }
+
+
+.content{
+    display: none;
+ }

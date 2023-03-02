@@ -5,6 +5,37 @@ const chatInput = document.getElementById("chat-input");
 const chatMessages = document.getElementById("conversation-group");
 const sendButton = document.getElementById("SentButton");
 
+
+const btns = document.getElementsByClassName("btn");
+
+for(const bts_ of btns){
+   
+   bts_.onclick = function(){
+      
+      // seleciona todos os botões com a classe .btn dentro de #methodlearn
+      const childs = document.querySelectorAll("#methodlearn .btn");
+      let index = 0;
+      
+      // determina o index do botão com base 0
+      for(const el of childs){
+         if(this == el) break;
+         index++;
+      }
+      
+      const contents = document.getElementsByClassName("content");
+      
+      // esconde todos
+      for(const cts_ of contents){
+         cts_.style.display = "none";
+      }
+      
+      // mostra só a div do botão que foi clicado
+      contents[index].style.display = "block";
+      
+   }
+   
+}
+
 if (chatButton) {
     chatButton.addEventListener("click", function () {
         if (chatContainer) {
