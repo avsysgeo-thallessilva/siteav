@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $anexo = $_POST["anexar"];
 
   // Configura os dados do email
-  $to = "suporte@avsystemgeo.com.br";
+  $to = "rh@avsystemgeo.com.br";
   $subject = "Nova mensagem do site";
   $body = "Nome: $name\nEmail: $email\nMensagem: Olá, gostaria de deixar meu currículo no banco de talentos da AVSystemGEO\n
   Nome: $name, sexo: $sexo, Estado Civil: $estado_civil\n

@@ -594,19 +594,20 @@ element.style {
 .sentText {
     margin: 0px auto;
     min-width: 100%;
-    display: block;
+    display: inline;
     font-size: 16px;
     line-height: 19px;
     padding: 8px 16px;
     color: rgb(0, 125, 252);
-    background: #f2f9ff;
+    background: #acd7fd;
     position: relative;
     z-index: 2;
     outline: none;
     border-radius: 20px;
     font-weight: normal;
-    margin: 10px;
+    margin-left: 80%;
 }
+
 
 .botText {
     color: rgb(6, 19, 43);
