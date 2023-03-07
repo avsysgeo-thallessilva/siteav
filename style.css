@@ -280,7 +280,6 @@ color:#212121 ;
 }
 .footer-container-global h5, li, a:link{
 	text-align: left !important;
-  color: white ;
 }
 .footer-links {
   font-size: 12px;
@@ -595,20 +594,21 @@ textarea::placeholder {
 
         
 .container1 {
-  min-width: 100%;
+  min-width: 104%;
   margin: 0 auto;
   position: relative;
-  padding: 2rem;
+  padding: 50px;
  background-color:#010F2E;
  color: #ffffff;
 }
 .logo-footer{
 max-width: 110px;
-float: left;
 margin-top: 7px;
-margin-right: 80%;
+margin-left: 30%;
 }
-
+.col-title{
+  margin-left: 17%;
+}
 
 
 .copyright {
@@ -736,6 +736,7 @@ text-decoration: underline;
   position: relative;
   text-decoration: none;
   display:inline-block;
+  margin-top:10px;
   margin-right:7px;
   margin-bottom: 50px;
   
@@ -962,6 +963,14 @@ footer .botao:hover::before, .botao:hover::before{
 footer .botao:hover::after, .botao:hover::after{
     opacity:1;
     width: 150%;
+}
+
+.footer-nav{
+  padding-right:3%;
+}
+
+.logo-footer-espacamento{
+  margin-left:5%;
 }
 
 @media screen and (max-width: 300px){
