@@ -101,13 +101,7 @@ margin-bottom: 20px;
   transition: all 200ms linear;
 }
 
-#quem-somos,#clientes{
 
-  left: 0;
-  margin-top: -50px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
-  background-color: transparent;
-
-}
 
 .nav-item .nav-link{
 color:#212121 ;
@@ -591,24 +585,23 @@ textarea::placeholder {
   background: #9CD439; 
 }
 
-
+/*footer*/
         
+       
 .container1 {
   min-width: 104%;
   margin: 0 auto;
   position: relative;
-  padding: 50px;
+  padding: 2rem;
  background-color:#010F2E;
  color: #ffffff;
 }
 .logo-footer{
 max-width: 110px;
-margin-top: 7px;
-margin-left: 30%;
+left:30%;
+position: relative;
 }
-.col-title{
-  margin-left: 17%;
-}
+
 
 
 .copyright {
@@ -736,7 +729,6 @@ text-decoration: underline;
   position: relative;
   text-decoration: none;
   display:inline-block;
-  margin-top:10px;
   margin-right:7px;
   margin-bottom: 50px;
   
@@ -965,12 +957,15 @@ footer .botao:hover::after, .botao:hover::after{
     width: 150%;
 }
 
-.footer-nav{
-  padding-right:3%;
+.col-title{
+  padding-left: 19%;
+}
+.espace-localizacao{
+padding-left: 12%;
 }
 
-.logo-footer-espacamento{
-  margin-left:5%;
+.col-list-localizacao{
+  padding-right: 20%;
 }
 
 @media screen and (max-width: 300px){
@@ -1047,8 +1042,12 @@ footer .botao:hover::after, .botao:hover::after{
   }
 
 
+
+
+
+
 /*Dropdown do contato*/
-.nested,.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
