@@ -57,15 +57,15 @@ if (minimizeButton) {
 function createMessage(message, isUser = true) {
     const newMessage = document.createElement('div');
     newMessage.classList.add(isUser ? 'sentText' : 'botText');
-    newMessage.textContent = message;
+    newMessage.innerHTML = message;
     chatMessages.appendChild(newMessage);
     return newMessage;
 }
 
 function chatbotResponse() {
-    const messages = ["Só um instante, por favor.", "Se tiver mais dúvidas, estou a disposição"];
-    const randomIndex = Math.floor(Math.random() * messages.length);
-    const message = messages[randomIndex];
+    const Whatsapp = "https://wa.me/553198203810";
+    const messages = `Caso sua dúvida não tenha sido esclarecida, basta clicar aqui que você será redirecionado para o nosso <a href="${Whatsapp}" style= "color: #4adbff";>Whatsapp</a>`;
+    const message = messages;
     const botMessage = createMessage(message, false);
     botMessage.scrollIntoView();
 }

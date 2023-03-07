@@ -635,3 +635,6 @@ element.style {
 .content{
     display: none;
  }
+ .btn{
+    font-size: small;
+ }
