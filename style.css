@@ -589,7 +589,7 @@ textarea::placeholder {
         
        
 .container1 {
-  min-width: 104%;
+  min-width: 100%;
   margin: 0 auto;
   position: relative;
   padding: 2rem;
@@ -610,7 +610,7 @@ font-size: 1rem;
 font-weight: 300;
 color: var(--color-3);
 text-align: center;
-border-top: 1px solid var(--color-3);
+border-top: 2px solid var(--color-3);
 }
 
 
@@ -696,20 +696,33 @@ gap: 0.5rem;
 flex: 1;
 }
 
+.col-list{
+  padding:0;
+}
 
+.col-servicos{
+  margin-left:-40px;
+}
+.col-localizacao{
+  margin-left:-50px;
+}
 
-.col-list ul li{
+.col-list li{
 list-style: none;
+
 }
 
 
 
-.col-list ul li a{
+.col-list li a{
 text-decoration: none;
 color: var(--color-3);
-transition: var(--transition)
+transition: var(--transition);
 }
 
+.col-list li a:hover{
+text-decoration: underline;
+}
 
 
 .col-list ul li a:hover,
@@ -765,6 +778,7 @@ text-decoration: underline;
     font-size:1em;
     color:#bfff00;
     text-align:center;
+    top:20px;
     border:1px solid #000000;
     border-radius:3px;
     overflow: hidden!important;
@@ -958,15 +972,10 @@ footer .botao:hover::after, .botao:hover::after{
 }
 
 .col-title{
-  padding-left: 19%;
-}
-.espace-localizacao{
-padding-left: 12%;
+  padding-left: 0;
 }
 
-.col-list-localizacao{
-  padding-right: 20%;
-}
+
 
 @media screen and (max-width: 300px){
   .container1 {

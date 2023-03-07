@@ -72,39 +72,20 @@
 
  .fd  {
   width: 18.5rem;
+  height: 420px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 1rem;
-  padding: 3rem 1rem 1rem;
-  background-color: var(--cor);
+  padding:0;
+  background-color: var(--branco);
+  color:var(--preto);
   position: relative;
   overflow: hidden;
   border-radius: 7%;
   box-shadow: 7px 8px #142f2f;
-  
+  display: flex;
 }
-
-/*Ver com o Hugo*/
-.descendo{
-  padding-bottom: 36%;
-}
-
-/*diminuir aqui quando aumentar o subindo-2*/
-.descendo-2{
-  padding-bottom: 17%;
-}
-
-.subindo{
-  padding: 5%;
-}
-/* aumentar aqui dá espaço entre missão e o texto abaixo */
-.subindo-2{
-  padding:3%;
-}
-
-
-
 
 
 .principal #servicos-container .fd:hover .bgColor {
@@ -114,23 +95,35 @@
 .fd:hover{
   transform: scale(1.1);
 }
-.titulo-quem-somos {
-  margin-bottom: 4rem;
-  font-size: 2rem;
-  color: white;
+
+.titulo-card{
+  background-color: var(--verde);
+  color:var(--branco);
   text-align: center;
+  width: 100%;
+  height:100px;
+  padding-top:30px;
+  flex-grow: 0;
 }
 
-.vambora{
+.conteudo-card{
+  flex-grow: 1;
+  padding:0 20px;
+  display:flex;
+  align-items: center;
+}
+
+
+
+.alinhar-card{
   padding-bottom: 3.5rem!important;
 }
 
 
 
-#palavra , #servicos-co-descricao{
-  font-weight: 600;
-  color: white;
-  z-index: 1;
+.fd p{
+  color: var(--preto);
+
   text-align: center;
 }
 
@@ -141,10 +134,15 @@ list-style:none;
 text-align: center;
 }
 
+.lista-valores{
+padding-left:20px;
+}
 
 .icon-da-medalha{
-  list-style: url(/medal-award-winner-svgrepo-com.svg)!important;
+  list-style: url(/medal-award-winner-svgrepo-com.svg);
 }
+
+
 
 
 
