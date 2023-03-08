@@ -59,13 +59,12 @@ $(document).ready(function () {
 
 	$('.tecnologias').slick({
 		slidesToShow: 6,/*o numero de slides que aparece na tela */
-		/*mostra o slide no centro */
 		swipeToSlide: true,/*permite arrastar o slide */
 		slidesToScroll: 1,
 		draggable: true,
 		infinite:true,
-		prevArrow:"<svg fill='#9CD439' class='tamanho-svg-prev slick-prev-tecnologia slick-arrow-tecnologia' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' stroke='#9CD439' stroke-width='32.768'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'><path d='M604.7 759.2l61.8-61.8L481.1 512l185.4-185.4-61.8-61.8L357.5 512z'></path></g></svg>"/*muda o que está escrito no button */,
-		nextArrow:"<svg fill='#9CD439' class='tamanho-svg-next slick-next-tecnologia slick-arrow-tecnologia' viewBox='0 0 1024.00 1024.00' xmlns='http://www.w3.org/2000/svg' stroke='#9CD439' stroke-width='32.768'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'><path d='M419.3 264.8l-61.8 61.8L542.9 512 357.5 697.4l61.8 61.8L666.5 512z'></path></g></svg>",
+		prevArrow:$('.prev-tecnologias'),
+		nextArrow:$('.next-tecnologias'),
 		/*prevArrow:"<img class='a-left control-c prev slick-prev' src='YOUR LEFT ARROW IMAGE URL'>", */
 		autoplay: true,
 		autoplaySpeed: 2500,
@@ -92,8 +91,8 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		draggable: true,
 		infinite:true,
-		prevArrow:"<svg fill='#9CD439' class='tamanho-svg-prev slick-prev-clientes slick-arrow-clientes' viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg' stroke='#9CD439' stroke-width='32.768'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'><path d='M604.7 759.2l61.8-61.8L481.1 512l185.4-185.4-61.8-61.8L357.5 512z'></path></g></svg>"/*muda o que está escrito no button */,
-		nextArrow:"<svg fill='#9CD439' class='tamanho-svg-next slick-next-clientes slick-arrow-clientes' viewBox='0 0 1024.00 1024.00' xmlns='http://www.w3.org/2000/svg' stroke='#9CD439' stroke-width='32.768'><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'><path d='M419.3 264.8l-61.8 61.8L542.9 512 357.5 697.4l61.8 61.8L666.5 512z'></path></g></svg>",
+		prevArrow:$('.prev-clientes'),
+		nextArrow:$('.next-clientes'),
 		/*prevArrow:"<img class='a-left control-c prev slick-prev' src='YOUR LEFT ARROW IMAGE URL'>", */
 		autoplay: true,
 		autoplaySpeed: 2500,

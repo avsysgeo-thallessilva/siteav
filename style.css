@@ -17,10 +17,7 @@ body{
   background-color: var(--cinza);
 }
 
-h2{
-margin-bottom: 20px;
 
-}
 
 .start-header {
 	opacity: 1;
@@ -173,7 +170,7 @@ color:#212121 ;
 
 .section-container-about {
   margin-top: 130px;
-  margin-bottom: 130px;
+  margin-bottom: 50px;
   background-image: url(./imgs/vetores/background-vetor-01.png);
   background-position: right;
   background-repeat: no-repeat;
@@ -240,7 +237,7 @@ color:#212121 ;
 	height: 400px;
 }
 .video-texto {
-	padding: 220px -0 0 0;
+	padding: 90px -0 0 0;
 }
 .color-green {
 	color: #9CD439;

@@ -1,5 +1,5 @@
 .container-tecnologias {
-    margin-top: 10%;
+  
     max-width:100%
 }
 
@@ -49,14 +49,11 @@
 
 .slick-slide {
     display: none;
-    float:left;/*slide não aparece sem o float*/
+    float:left;/*para as imagens do carrossel aparecerem*/
     height: 100%;
     min-height: 1px;
 }
 
-[dir='rtl'] .slick-slide {
-    float: right;
-}
 
 /*slide não aparece */
 .slick-initialized .slick-slide {
@@ -72,65 +69,33 @@
 }
 
 /*formata os slides dos clientes*/
-.clientes .slide{
-    height: 80px;
-    line-height: 54px;
-}
-
-
 .tecnologias{
     line-height: 69px;
 }
 
-/*Slides Tecnologia*/
-.slick-arrow-tecnologia{
-    z-index: 1;
+/*Slides Tecnologia e clientes*/
+.container-arrows{
+    position:absolute;/*para sobrepor o slide*/
+    display:flex;/*alinha as arrows*/
+    width: 100%;
+    margin-top:60px;/*distancia do top para centralizar*/
+    padding: 10px;
+    margin-left: 40px;
+    height: 89px;/*não muda nada*/
+    
+}
+.slick-arrow-position{
     position: absolute;
-    display:flex;
 }
 
-/*Ver com o Hugo o espaçamento tecnologia */
-.slick-prev-tecnologia{
-    margin-top:1%;
-    margin-left: -6.7%;
-}
-.slick-next-tecnologia{
-    margin-top: -8.1%;
-    margin-left:99.5%;
+.next-tecnologias,.next-clientes{
+    margin-left: 86%;/*alinha para a direita da pagina*/
 }
 
-.slick-arrow-tecnologia{
-    z-index: 1;
-    position: absolute;
-    display:flex;
-}
-/*Fim Slide Tecnologia*/
-
-/*Slides Clientes*/
-
-.slick-arrow-clientes{
-    z-index: 1;
-    position: absolute;
-    display:flex;
-}
-
-/*Ver com o Hugo o espaçamento clientes */
-.slick-prev-clientes{
-    margin-top:0.5%;
-    margin-left: -6.3%;
-}
-.slick-next-clientes{
-    margin-top: -7.3%;
-    margin-left:99.1%;
-}
-/*Fim Slide Clientes*/
+/*Fim dos Slides*/
 
 /*Ajusta tamanho dos Icons next e prev*/
-.tamanho-svg-next{
-    height: 70px;
-    width: 80px;
-}
-.tamanho-svg-prev{
+.tamanho-svg-prev, .tamanho-svg-next{
     height: 70px;
     width: 80px;
 }

@@ -27,7 +27,9 @@
   }
 }
 /* CORRIGIR OS TEXTOS */
-
+.servicos-title{
+  margin-bottom: 40px;
+}
 
 
 
@@ -123,7 +125,6 @@
 
 .fd p{
   color: var(--preto);
-
   text-align: center;
 }
 

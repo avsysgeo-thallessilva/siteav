@@ -1,5 +1,4 @@
 .mapa {
-
     margin-top: 5%;
       width: 50%;
       height: 300px;
@@ -16,6 +15,11 @@
    margin-top:-23%;
    margin-left:50%;
    margin-bottom: 20%;
+  }
+
+  label{
+    margin-bottom:-2px;
+    margin-top: 5px;
   }
 
   .container-fluid{
