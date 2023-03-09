@@ -1,0 +1,143 @@
+<form action="#" method="post" name="dados" class="classe">
+            <div class="form-row">
+                <h1>Dados Pessoais</h1>
+                <tr>
+
+                    <td><label>Nome completo: </label></td>
+                    <td> <input class="form-control " type="text" id="nome" name="nome" placeholder="Nome" required />
+                    </td>
+                    <td><label> Sexo: </label></td>
+                    <td><select class="form-control " id="genero" name="genero" required>
+                            <option value="masculino" selected="selected">M</option>
+                            <option value="feminino">F</option>
+                            <option value="lg">Prefiro não informar</option>
+                        </select>
+                    </td>
+                    <td><label> Estado civil: </label></td>
+                    <td><select class="form-control " id="ecivil" name="genero" required>
+                            <option value="solteiro" selected="selected">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viuvo</option>
+                        </select></td>
+
+                    <td><label>Data de nascimento:</label></td>
+                    <td> <input class="form-control " type="date" id="yeah" name="lançamento"> </td>
+
+                <tr></tr>
+                <tr>
+                    <td><label id="tel">Telefone fixo/móvel:</label></td>
+                    <td><input class="form-control " type="text" class="telefone" pattern=".{13,14}" maxlength="14"
+                            name="Telefone" placeholder="(xx)xxxxx-xxxx" required></td>
+
+                    <td> <label>Email:</label></td>
+                    <td><input class="form-control " id="Field3" name="Field3" type="email" spellcheck="false" value=""
+                            maxlength="255" tabindex="3" placeholder="xxxx@mail.com"></td>
+                </tr>
+            
+
+
+
+
+            <h1>Grau de Graduação</h1>
+
+
+
+            <tr>
+                <td><label> Escolaridade: </label></td>
+                <td><select class="form-control teste" id="genero" name="genero" required>
+                        <option value="" selected="selected">Selecione uma opção</option>
+                        <option value="Seinen">Ensino Médio completo</option>
+                        <option value="shounen">Ensino Superior Incompleto</option>
+                        <option value="shounen">Ensino Superior Completo</option>
+                        <option value="shounen">Pós Graduação Incompleta</option>
+                        <option value="shounen">Pós Graduação Completa</option>
+                    </select>
+                </td>
+
+                <td><label>Curso</label></td>
+                <td><input class="form-control teste" id="texto" name="texto" spellcheck="true" rows="10" cols="50"
+                        tabindex="4"></textarea></td>
+                <td><label>Data de conclusão:</label></td>
+                <td> <input class="form-control teste" type="date" id="yeah" name="lançamento"> </td>
+            </tr>
+            <td><label>Curso</label></td>
+            <d><input class="form-control teste" id="texto" name="texto" spellcheck="true" rows="10" cols="50"
+                    tabindex="4"></textarea></td>
+                <td><label>Data de conclusão:</label></td>
+                <td> <input class="form-control teste" type="date" id="yeah" name="lançamento"> </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label> Área de interesse </label></td>
+                    <td><select class="form-control teste" id="genero" name="genero" required>
+                            <option value="" selected="selected">Administrativo</option>
+                            <option value="Seinen">Desenvolvimento de Software</option>
+                            <option value="shounen">Infraestrutura</option>
+                        </select><br /><br /></td>
+
+
+
+
+
+                    <h1>Experiência profissional</h1>
+
+
+
+                <tr>
+
+                    <td><label>Última empresa em que trabalhou ou trabalha </label></td>
+                    <td> <input class="form-control teste" type="text" id="nome" name="nome" placeholder="Nome"
+                            required /></td>
+                </tr>
+
+                <tr>
+                    <td><label>Função</label></td>
+                    <td><input class="form-control teste" type="text" id="funcao" name="funcao"
+                            placeholder="Função que exercia" required /></textarea></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label>Período:</label></td>
+                    <td><input class="form-control teste" type="date" id="yeah" name="lançamento"> </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label>Descrição das atividades</label></td>
+                    <td><textarea class="form-control teste" id="Field4" name="Field4" spellcheck="true" rows="5"
+                            cols="10" tabindex="4"></textarea></td>
+                </tr>
+                <tr></tr>
+                </tr>
+                <tr>
+                    <td><label>Penúltima empresa em que trabalhou</label></td>
+                    <td> <input class="form-control teste" type="text" id="nome" name="nome" placeholder="Nome"
+                            required /></td>
+                </tr>
+
+                <tr>
+                    <td><label>Função</label></td>
+                    <td><input class="form-control teste" type="text" id="funcao" name="funcao"
+                            placeholder="Função que exercia" required /></textarea></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label>Período:</label></td>
+                    <td><input class="form-control teste" type="date" id="yeah" name="lançamento"> </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label>Descrição das atividades</label></td>
+                    <td><textarea class="form-control teste" id="Field4" name="Field4" spellcheck="true" rows="10"
+                            cols="50" tabindex="4"></textarea></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td> <label> Anexo de Curriculo (Opcional): </label></td>
+                    <td> <input type="file" id="anexar" name="anexar"></td> <br /><br />
+                </tr>
+                </tr>
+                <button type="submit" class="botao"><a
+                        href="mailto:rh@avsystemgeo.com.br?subject=Assunto&body=Boa tarde, Gostaria de enviar meus dados para serem avaliados para uma achance de emprego na AVSystemGEO: ">Enviar</a></button>
+ 
+        </form>

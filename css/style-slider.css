@@ -78,9 +78,9 @@
     position:absolute;/*para sobrepor o slide*/
     display:flex;/*alinha as arrows*/
     width: 100%;
-    margin-top:60px;/*distancia do top para centralizar*/
+    margin-top:45px;/*distancia do top para centralizar*/
     padding: 10px;
-    margin-left: 40px;
+    margin-left: 45px;
     height: 89px;/*não muda nada*/
     
 }
