@@ -64,7 +64,7 @@ function createMessage(message, isUser = true) {
 
 function chatbotResponse() {
     const Whatsapp = "https://wa.me/553198203810";
-    const messages = `Caso sua dúvida não tenha sido esclarecida, basta clicar aqui que você será redirecionado para o nosso <a href="${Whatsapp}" style="color: #4adbff"; target="_blank">Whatsapp</a>`;
+    const messages = `Caso sua dúvida não tenha sido esclarecida, basta clicar aqui que você será redirecionado para o nosso <a href="${Whatsapp}" style="color: #337029"; target="_blank">Whatsapp</a>`;
     const message = messages;
     const botMessage = createMessage(message, false);
     botMessage.scrollIntoView();
